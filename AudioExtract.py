@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Created by Artsuki on 2019-04-23
+
+"""
+Please set the input_path before running
+"""
+
 import os
 import subprocess
 
@@ -16,7 +24,7 @@ class AudioExtract:
         
     def mp3_convert(self):
         for filename in self.files:
-            strcmd = f"ffmpeg -i {input_path}{filename} -vn {output_path}{filename[:-4]}.mp3"
+            strcmd = f"ffmpeg -i {self.input_path}{filename} -vn {self.output_path}{filename[:-4]}.mp3"
             print(f'processing {filename}......')
             subprocess.call(strcmd, shell=True)
             print(f'{filename} processed')
