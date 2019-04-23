@@ -1,7 +1,7 @@
 # audio_extract
-*These codes are trying to Use ffmpeg to extract audio from video
-*no third part packege is needed
-*ffmpeg must download from official website first
+* These codes are trying to Use ffmpeg to extract audio from video
+* no third part packege is needed
+* ffmpeg must download from official website first
 
 ## user instruction
 *the code file should put to ffmpeg folder where ffmpeg.exe exists
